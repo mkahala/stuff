@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
+import PhoneField from './components/PhoneField/PhoneField';
+import CountriesList, {CountryType} from './components/CountriesList/CountriesList';
+import ListOfCountries from './components/CountriesList/listOfCountries.json';
 
 function App() {
+  const [isPhoneFieldFocused, setIsPhoneFieldFocused] =  useState<boolean>(false);
+  const [clickWithinWidget, setClickWithinWidget] =  useState<boolean>(false);
+  const [selectedCountry, setSelectedCountry] = useState<CountryType>(ListOfCountries[0]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='Container'>
+        <h1 className='Phone-label'>Phone</h1>
+        <PhoneField
+            toggleCountriesList={setIsPhoneFieldFocused}
+            countryCode={selectedCountry.code}
+        />
+        {(isPhoneFieldFocused || clickWithinWidget) &&
+            <CountriesList
+              setShowCountriesList={setClickWithinWidget}
+              selectedCountry={selectedCountry}
+              setSelectedCountry={setSelectedCountry}
+            />
+        }
+      </div>
   );
 }
 

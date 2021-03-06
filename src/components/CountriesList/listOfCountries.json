@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "United States",
+    "iso": "usa",
+    "code": 1
+  },
+  {
+    "id": 2,
+    "name": "Belgium",
+    "iso": "bel",
+    "code": 32
+  },
+  {
+    "id": 3,
+    "name": "Canada",
+    "iso": "can",
+    "code": 1
+  },
+  {
+    "id": 4,
+    "name": "France",
+    "iso": "fra",
+    "code": 33
+  },
+  {
+    "id": 5,
+    "name": "Sweden",
+    "iso": "swe",
+    "code": 64
+  },
+  {
+    "id": 6,
+    "name": "Syria",
+    "iso": "syr",
+    "code": 963
+  }
+]

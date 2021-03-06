@@ -1,0 +1,22 @@
+.Field-Container {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #d0cece;
+  border-radius: 3px;
+  padding: 2px 10px;
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.Country-Code {
+  margin-right: 5px;
+}
+
+.Input-Field {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}

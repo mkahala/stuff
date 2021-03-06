@@ -1,0 +1,40 @@
+.Countries-List {
+  margin-top: 15px;
+  width: 80%;
+  background-color: white;
+  box-shadow: 2.3px 4.4px 25.7px 1.4px rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.Country {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.Country-Flag {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.Separator {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.Search {
+  margin: 15px 0;
+  &::placeholder {
+    color: #b0b0b0;
+  }
+}
+
+.Search-Options {
+  max-height: 100px;
+  margin: 10px 0;
+}

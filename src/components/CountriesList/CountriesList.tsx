@@ -72,6 +72,7 @@ const CountriesList = (props: OwnProps) => {
                 <>
                     <div className='Separator' />
                     <div className='Search-Options'>
+                        { filteredCountries.length === 0 && <div className="No-Result">No Results</div> }
                         {  filteredCountries
                             .map((country) => country.id !== selectedCountry.id && (
                                 <Country
